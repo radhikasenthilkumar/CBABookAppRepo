@@ -106,6 +106,6 @@ public class BookServiceTest {
         assertThrows(NoSuchBookExistsException.class,() -> {
             service.getBookById(2L);
         });
-        verify(repository).findById(2L);
+        verify(repository).findById(2L); 
     }
 }
